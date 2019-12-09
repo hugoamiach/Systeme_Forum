@@ -3,7 +3,8 @@ package com.company;
 public class Main {
 
     public static void main(String[] args) {
-        /*Forum forum = new Forum("Programmation orient´ee objet");
+        /*
+        Forum forum = new Forum("Programmation orient´ee objet");
         Theme theme1 = new Theme("Constructeurs");
         Theme theme2 = new Theme("Design patterns");
         Salon salon1 = new Salon("H´eritage");
@@ -23,7 +24,6 @@ public class Main {
         salon2.add(message3);
         salon3.add(message4);
         System.out.println(forum.toString());
-
          */
     }
 }
