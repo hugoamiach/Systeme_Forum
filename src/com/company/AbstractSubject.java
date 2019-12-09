@@ -2,6 +2,7 @@ package com.company;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public abstract class AbstractSubject<T extends IComposite> {
     private String subject;
@@ -29,6 +30,12 @@ public abstract class AbstractSubject<T extends IComposite> {
 
     @Override
     public String toString() {
-        return getType().concat(this.getSubject()).concat(this.gettList().toString());
+        return getType()
+                .concat(this.getSubject())
+                .concat(this.gettList()
+                        .stream()
+                        .map(e -> "\n".concat(e.toString()))
+                        .collect(Collectors.toList())
+                        .toString());
     }
 }
