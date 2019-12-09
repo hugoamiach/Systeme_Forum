@@ -1,6 +1,6 @@
 package com.company;
 
-public class Salon extends AbstractSubject<Message> implements IComposite {
+public final class Salon extends AbstractSubject<Message> implements IComposite {
     public Salon(String s) {
         super(s);
     }
